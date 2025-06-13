@@ -253,6 +253,7 @@ export default {
     genericWreckMaterial: r.object,
     hullAreas: r.array,
     hullCategories: r.array,
+    hullCategoriesData: r.array,
     hullDamage: r.object,
     materialPrefixes: r.array,
     patternMaterialPrefixes: r.array,
@@ -263,6 +264,11 @@ export default {
     swarm: r.object,
     variants: r.array,
     visibilityGroups: r.array
+  },
+
+  "EveSOFDataGenericHullCategory" : {
+    name: r.string,
+    reflectionMode: r.uint
   },
 
   "EveSOFDataGenericDamage": {
@@ -294,7 +300,8 @@ export default {
     defaultTextures: r.array,
     parameters: r.array,
     parentTextures: r.array,
-    shader: r.string
+    shader: r.string,
+    additive: r.boolean
   },
 
   "EveSOFDataGenericHullDamage": {
@@ -658,6 +665,7 @@ export default {
     lightColor: r.color,
     noiseAmplitude: r.float,
     noiseFrequency: r.float,
+    noiseOctaves: r.float,
     outerAngle: r.float,
     position: r.vector3,
     radius: r.float,
@@ -681,6 +689,7 @@ export default {
 
   "EveSOFDataHullPlaneSet": {
     atlasSize: r.uint,
+    atlasAspectRatio: r.vector2,
     items: r.array,
     layer1MapResPath: r.path,
     layer2MapResPath: r.path,
@@ -790,6 +799,7 @@ export default {
     minScale: r.float,
     position: r.vector3,
     rotation: r.quaternion,
+    saturation: r.float,
     scaling: r.vector3,
     spacing: r.float
   },
