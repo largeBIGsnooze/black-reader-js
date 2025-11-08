@@ -608,8 +608,8 @@ export default {
     name: r.string,
     offset: r.vector3,
     parentDescriptor: r.object,
-    resPathDefaultCorp: r.string,
-    extendsBoundingSphere: r.float
+    resPathDefaultCorp: r.path,
+    extendsBoundingSphere: r.boolean
   },
 
   "EveSOFDataHullHazeSet": {
